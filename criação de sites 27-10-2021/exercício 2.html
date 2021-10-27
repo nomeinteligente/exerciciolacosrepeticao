@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+            let altura=prompt("Digite sua altura: ")
+            let peso=prompt("Digite seu peso: ")
+            imc= peso/(altura*altura)
+            if (imc<18.5){
+                alert("Você está no estado de magro")
+            }else if (imc>=18.5 && imc<24.9){
+                alert("Você está no estado de peso ideal")
+            }else if(imc>=30 && imc<29.9){
+                alert("Você está sobre o peso ideal")
+            }else if(imc>=30 && imc<39.9){
+                alert("Você está no estado de obesidade")
+            }else if (imc>40){
+                alert("Você está no estado de obesidade grave")
+            }
+        }while(confirm("Deseja fazer outro teste de imc?"))
+    </script>
+</body>
+</html>

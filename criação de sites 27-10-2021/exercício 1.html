@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1=prompt("Digite um primeiro número: ")
+        let n2=prompt("Digite um segundo número: ")
+        for(i=n1;i<=n2;i++){
+            let p=0
+            for(n=2;n<i;n++){
+                if(i%n==0){
+                    p++
+                    break;
+                }
+            }
+        }   if(p==0){
+            console.log(n);
+        }
+    </script>
+</body>
+</html>
